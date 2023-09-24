@@ -17,6 +17,7 @@ crash*. It doesn't necessarily mean it will run well on your system ;) It featur
   unfriendly towards your fellow users, but it can also get you banned from certain indexers.
 - [qBittorrent-vpn](https://www.qbittorrent.org/) can download torrents and provides a bunch more
   features for management.
+    - https://github.com/Trigus42/alpine-qbittorrentvpn
 - [Jellyfin](https://jellyfin.org/) is an alternative for PleX. Which you'd like to use is a matter
   of preference, and you *could* even use both, although this is probably a waste of resources.
 - [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) is like Overseerr, but for Jellyfin.
