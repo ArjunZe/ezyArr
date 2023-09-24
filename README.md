@@ -55,18 +55,6 @@ take a look at [important notes](#important-notes) before you continue.
   field: `chmod -R 775 "%F/"`.
 - You'll have to add indexers in Prowlarr by hand. Use Prowlarrs settings to connect it to the
   other -arr apps.
-  
-### SABnzbd External internet access denied message
-When you're trying to access SABnzbd the first time you'll come across the message `External
-internet access denied`. To fix this simple modify the `sabnzbd.ini` and change `inet_exposure` to
-`4`, restart the docker container for sabnzbd (`docker restart sabnzbd`) and now you can access the
-UI of SABnzbd (note: you may get a `Access denied - Hostname verification failed`, to fix this,
-simply go to the IP of your server directly instead of the hostname). After accessing the UI don't
-forget to set a username and password (https://sabnzbd.org/wiki/configuration/3.7/general,
-section Security).
-
-For more instructions or help see also https://sabnzbd.org/wiki/extra/access-denied.html on the
-official SABnzbd website.
 
 ## FAQ
 
