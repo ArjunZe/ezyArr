@@ -10,38 +10,18 @@ crash*. It doesn't necessarily mean it will run well on your system ;) It featur
   already own in order to create a more uniformly formatted collection.
 - [Radarr](https://radarr.video/) is like Sonarr, but for movies.
 - [Lidarr](https://lidarr.audio/) is like Sonarr, but for music.
-- [Readarr](https://readarr.com/) is like Sonarr, but for books.
-- [Mylar3](https://github.com/mylar3/mylar3) is like Sonarr, but for comic books. This one is a bit
-  tricky to set up, so do so at your own risk. In order to connect this to your Prowlarr container,
-  the process within Prowlarr is the same as for the other containers (add app). You'll have to add
-  an API key within Mylar3, yourself.
-- [Audiobookshelf](https://www.audiobookshelf.org/) is a self-hosted audiobook and podcast server.
 - [Prowlarr](https://wiki.servarr.com/prowlarr) can keep track of indexers, which are services that
   keep track of Torrent or UseNet links. One can search an indexer for certain content and find a
   where to download this. **Note**: when adding an indexer, please do not set the "seed ratio" to
   less than 1. Less than 1 means that you upload less than you download. Not only is this
   unfriendly towards your fellow users, but it can also get you banned from certain indexers.
-- [Jackett](https://github.com/Jackett/Jackett) is an alternative to Prowlarr. 
-- [qBittorrent](https://www.qbittorrent.org/) can download torrents and provides a bunch more
+- [qBittorrent-vpn](https://www.qbittorrent.org/) can download torrents and provides a bunch more
   features for management.
-- [SABnzbd](https://sabnzbd.org/) can download nzb's
-  features for management.
-- [PleX](https://www.plex.tv/) is a mediaserver. Using this, you get access to a Netflix-like
-  interface across many devices like your laptop or computer, your phone, your TV and more. For
-  some features, you need a [PleX pass](https://www.plex.tv/nl/plex-pass/).
-- [Tautulli](https://tautulli.com/) is a monitoring application for PleX  which can keep track of
-  what has been watched, who watched it, when and where they watched it, and how it was watched.
 - [Jellyfin](https://jellyfin.org/) is an alternative for PleX. Which you'd like to use is a matter
   of preference, and you *could* even use both, although this is probably a waste of resources.
-- [Overseerr](https://overseerr.dev/) is a show and movie request management and media discovery
-   tool.
 - [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) is like Overseerr, but for Jellyfin.
 
 ## Using
-### Using the CLI
-To make things easier, a CLI has been developed. First, clone the repository in a directory of your
-choosing. You can run it by entering `python main.py` and the CLI will guide you through the
-process. Please take a look at [important notes](#important-notes) before you continue.
 
 ### Manually
 1. To get started, clone the repository in a directory of your choosing. **Note: this will be where
@@ -60,6 +40,7 @@ That's it! Your containers are now up and you can continue to set up the setting
 take a look at [important notes](#important-notes) before you continue.
 
 ## Important notes
+- Guide on config - https://flemmingss.com/a-minimal-configuration-step-by-step-guide-to-media-automation-in-unraid-using-radarr-sonarr-prowlarr-jellyfin-jellyseerr-and-qbittorrent/
 - When linking one service to another, remember to use the container name instead of `localhost`.
 - Please set the settings of the -arr containers as soon as possible to the following (use
   advanced):
